@@ -1,0 +1,7 @@
+title: Steve's 2nd Article/Manuscript Template (Quarto)
+
+contributes:
+  formats:
+    pdf:
+      template: template.tex
+      block-headings: FALSE

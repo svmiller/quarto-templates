@@ -1,0 +1,60 @@
+---
+title: "Olfactory Commodification and the 'By Mennen' Jingle as Miniature Kulturindustrie"
+subtitle: "If You Heard the Jingle in Your Head, You're Old and Really Should Monitor Your Calcium Intake"
+
+format: 
+    qarticle2-pdf:
+      keep-tex: TRUE
+biblio-style: apsr
+thanks: "Replication files are available on the author's Github account (http://github.com/svmiller/svm-r-markdown-templates). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.v.miller@gmail.com."
+author:
+- name: Steven V. Miller
+  affiliations:
+    - ref: su
+- name: A Second Author Who Did Less Work
+  affiliations: The Ohio State University
+- name: A Graduate Student
+  affiliations: University of Alabama
+affiliations:
+  - id: su
+    name: Stockholm University
+    department: Institutionen för ekonomisk historia och internationella relationer
+    address: Universitetsvägen 10A, 114 18 Stockholm, Sweden
+abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero justo. Pellentesque eget nibh ex. Aliquam tincidunt egestas lectus id ullamcorper. Proin tellus orci, posuere sed cursus at, bibendum ac odio. Nam consequat non ante eget aliquam. Nulla facilisis tincidunt elit. Nunc hendrerit pellentesque quam, eu imperdiet ipsum porttitor ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Duis vitae nibh mauris. Duis nec sem sit amet ante dictum mattis. Suspendisse diam velit, maximus eget commodo at, faucibus et nisi. Ut a pellentesque eros, sit amet suscipit eros. Nunc tincidunt quis risus suscipit vestibulum. Quisque eu fringilla massa."
+keywords: "pandoc, r markdown, knitr"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+mainfont: cochineal
+sansfont: Linux Biolinum O
+fontsize: 11pt
+# doublespacing: TRUE
+endnote: no
+# pandocparas: TRUE
+sansitup: FALSE
+header-includes:
+  - \usepackage{longtable}
+  - \LTcapwidth=.95\textwidth
+  - \linespread{1.05}
+  - \usepackage{hyperref}
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this 
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
