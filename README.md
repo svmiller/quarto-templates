@@ -10,6 +10,7 @@ value for co-authored projects, though.
 # What's Included
 
 | **Template** | **Directory** | **Installation** | 
+|:------------:|:-------------:|:-----------------|
 | 2nd Article/Manuscript Template | [https://github.com/svmiller/quarto-templates/tree/main/qarticle2](`qarticle2`) | `quarto use template svmiller/quarto-templates/article2` |
 | 3rd Article/Manuscript Template | [https://github.com/svmiller/quarto-templates/tree/main/qarticle3](`qarticle3`) | `quarto use template svmiller/quarto-templates/qarticle3` |
 
