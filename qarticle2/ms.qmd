@@ -5,7 +5,7 @@ format:
     qarticle2-pdf:
       keep-tex: TRUE
 biblio-style: apsr
-anonymous: TRUE
+anonymous: FALSE
 thanks: "Replication files are available on the author's Github account (http://github.com/svmiller/svm-r-markdown-templates). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.v.miller@gmail.com."
 title-subtitle: FALSE
 author:
@@ -27,7 +27,7 @@ date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=2.5cm
 mainfont: cochineal
 sansfont: Libertinus Sans
-removetitleabstract: TRUE
+removetitleabstract: FALSE
 fontsize: 12pt
 # doublespacing: TRUE
 endnotes: FALSE
