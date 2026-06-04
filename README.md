@@ -18,3 +18,16 @@ You could alternatively do something like `quarto add svmiller/quarto-templates/
 but that would download just the contents of the `_extensions` directory. My 
 templates tend to have a lot of moving pieces and seeing them in the `.qmd`
 file can help the user make sense of them.
+
+# Article 2's Important YAML Parameters
+
+In addition to the standard fare in document YAML and other things unique to
+Quarto, the following YAML arguments are unique to my templates and/or this
+particular template.
+
+| **Argument** | **Description** |
+|:------------:|:----------------|
+| `title-subtitle:` | Defaults to FALSE. If TRUE, a subtitle is displayed on same line as title. If FALSE, an optional subtitle (if supplied) is on the line below the title |
+| `acmsans:`    | Defaults to FALSE. If TRUE, invokes use of a sans serif font to mimic [ACM template](https://quarto-journals.github.io/acm/).[^recommend] |
+
+[^recommend]: If you use this, I recommend you keep `fontsize:` at 11 and specify "Libertinus Sans" or "Linux Biolinum O" in the `sansfont:` argument.
