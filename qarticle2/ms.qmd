@@ -1,11 +1,13 @@
 ---
 title: "Olfactory Commodification and the 'By Mennen' Jingle as Miniature Kulturindustrie"
 subtitle: "If You Heard the Jingle in Your Head, You're Old and Really Should Monitor Your Calcium Intake"
-format: 
+format:
     qarticle2-pdf:
       keep-tex: TRUE
 biblio-style: apsr
+anonymous: TRUE
 thanks: "Replication files are available on the author's Github account (http://github.com/svmiller/svm-r-markdown-templates). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.v.miller@gmail.com."
+title-subtitle: FALSE
 author:
 - name: Steven V. Miller
   affiliations:
@@ -20,38 +22,59 @@ affiliations:
     department: Institutionen för ekonomisk historia och internationella relationer
     address: Universitetsvägen 10A, 114 18 Stockholm, Sweden
 abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero justo. Pellentesque eget nibh ex. Aliquam tincidunt egestas lectus id ullamcorper. Proin tellus orci, posuere sed cursus at, bibendum ac odio. Nam consequat non ante eget aliquam. Nulla facilisis tincidunt elit. Nunc hendrerit pellentesque quam, eu imperdiet ipsum porttitor ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Duis vitae nibh mauris. Duis nec sem sit amet ante dictum mattis. Suspendisse diam velit, maximus eget commodo at, faucibus et nisi. Ut a pellentesque eros, sit amet suscipit eros. Nunc tincidunt quis risus suscipit vestibulum. Quisque eu fringilla massa."
-keywords: "pandoc, r markdown, knitr"
+keywords: "pandoc, quarto, By Mennen, Speed Stick"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
-geometry: margin=1in
+geometry: margin=2.5cm
 mainfont: cochineal
-sansfont: Linux Biolinum O
-fontsize: 11pt
+sansfont: Libertinus Sans
+removetitleabstract: TRUE
+fontsize: 12pt
 # doublespacing: TRUE
-endnote: no
-# pandocparas: TRUE
-sansitup: FALSE
-header-includes:
-  - \usepackage{longtable}
-  - \LTcapwidth=.95\textwidth
-  - \linespread{1.05}
-  - \usepackage{hyperref}
+endnotes: FALSE
+pandocparas: TRUE
+acmsans: TRUE
+paper-info:
+  - "*DOI*: 10.4320/ICU8.1.2"
+  - "*JEL Codes*: A1, B2, C3, D4, Battleship Sunk!"
 ---
+
+```{r setup, include=FALSE}
+is_docx <- knitr::pandoc_to("docx")
+is_latex <- knitr::pandoc_to("latex")
+
+```
+
 
 # Introduction
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+{{< lipsum 1 >}}
 
 ```{r}
 1 + 1
 ```
 
-You can add options to executable code like this 
+Here is a footnote you can make an endnote if you'd like.[^fn]
 
-```{r}
-#| echo: false
-2 * 2
-```
+[^fn]: You'll just have to trust me on this.
+
+
+# Literature Review
+
+{{< lipsum 2-5 >}}
+
+
+# Theory
+
+{{< lipsum 6-8 >}}
+
+# Research Design
+
+{{< lipsum 9-12 >}}
+
+# Analysis
+
+{{< lipsum 13-17 >}}
+
+# Conclusion
+
+{{< lipsum 18-19 >}}
