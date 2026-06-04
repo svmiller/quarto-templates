@@ -28,6 +28,7 @@ particular template.
 | **Argument** | **Description** |
 |:------------:|:----------------|
 | `anonymous:` | Defaults to FALSE. If TRUE, suppresses identifying author information for presentation. Also moves tables and figures to back of the document. |
+| `removetitleabstract:` | Default to FALSE. If TRUE, removes title and abstract. Some journals want this for peer review. Will also anonymize document presentation, if not document information on the PDF side of things. |
 | `title-subtitle:` | Defaults to FALSE. If TRUE, a subtitle is displayed on same line as title. If FALSE, an optional subtitle (if supplied) is on the line below the title |
 | `acmsans:`    | Defaults to FALSE. If TRUE, invokes use of a sans serif font to mimic [ACM template](https://quarto-journals.github.io/acm/).[^recommend] |
 
