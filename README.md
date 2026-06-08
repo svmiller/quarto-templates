@@ -7,6 +7,11 @@ would install. In Quarto, you have to do something different that amounts to
 different copies of the template by particular project. That at least has 
 value for co-authored projects, though.
 
+Quarto is popular among researchers in part because it's not limited to the R
+programming language, like R Markdown is. Be advised the basic formatting of
+my templates do not lean on the use of the R programming language, though my 
+templates often come with R examples in the document.
+
 # What's Included
 
 | **Template** | **Directory** | **Installation** | 
