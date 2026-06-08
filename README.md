@@ -41,3 +41,38 @@ particular template.
 | `pandocparas:` | Defaults to FALSE. If TRUE, default paragraph style by Pandoc is used (i.e. no paragraph indents, spaces between paragraphs). If FALSE, default LaTeX paragraphs are used (i.e. no indent on first paragraph in a section, small indent on ensuing paragraphs) |
 
 [^recommend]: If you use this, I recommend you keep `fontsize:` at 11 and specify "Libertinus Sans" or "Linux Biolinum O" in the `sansfont:` argument.
+
+# Article 3's Important YAML Parameters
+
+In addition to the standard fare in document YAML and other things unique to
+Quarto, the following YAML arguments are unique to my templates and/or this
+particular template. Many of [the formatting quirks I built into my second
+article/manuscript template](https://svmiller.com/blog/2020/09/another-rmarkdown-article-template/)
+also appear in [the one I created in 2023](https://svmiller.com/blog/2023/05/a-third-rmarkdown-article-manuscript-template/) 
+and extend here for Quarto.
+
+## `solo-author`, `two-authors`, and `n-authors`
+
+Behavior in this template changes contingent on the number of authors. However,
+this needs to be declared by the user as in an argument in the YAML. If there
+are two authors, declare `two-authors: TRUE` in the YAML. If there are more than
+two authors, declare `n-authors: TRUE` in the YAML. The default formatting assumes
+there is just one author. You don't need to declare `solo-author: TRUE` in the
+YAML for just one author as this is the fallback in the absence of 
+`two-authors: TRUE` or `n-authors: TRUE`.
+
+## `alternate-layout`
+
+Defaults to `FALSE`, but when set to `TRUE`, this adjusts where the author and
+contact info should be. When `FALSE`, the author(s) affiliation information and
+contact information is placed adjacent to the abstract and above (optional)
+paper information. When `TRUE`, the author(s) affiliation information is
+underneath the listing of the authors while the contact information (i.e. emails)
+remain adjacent to the abstract. I recommend setting `alternate-layout: TRUE` for
+manuscripts when `n-authors: TRUE`. Adjust to your heart's content.
+
+## `remove-emails`
+
+Defaults to `FALSE`. If `TRUE`, author emails are scrubbed from the document.
+This is perhaps useful for multi-author documents and/or when a corresponding
+email in the acknowledgement underneath the title is sufficient.
