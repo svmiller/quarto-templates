@@ -7,3 +7,6 @@
 dross
 _figs
 _cache
+
+*.fff
+*.ttt
