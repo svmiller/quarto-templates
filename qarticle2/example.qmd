@@ -5,7 +5,7 @@ format:
     qarticle2-pdf:
       keep-tex: FALSE
 biblio-style: apsr
-anonymous: TRUE
+anonymous: FALSE
 thanks: "Replication files are available on the author's Github account (http://github.com/svmiller/svm-r-markdown-templates). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.v.miller@gmail.com."
 title-subtitle: FALSE
 author:
@@ -43,11 +43,8 @@ paper-info:
 is_docx <- knitr::pandoc_to("docx")
 is_latex <- knitr::pandoc_to("latex")
 
-knitr::opts_chunk$set(echo = FALSE,
-                      message=FALSE, warning=FALSE,
-                      fig.path='_figs/',
+knitr::opts_chunk$set(fig.path='_figs/',
                       cache.path = '_cache/',
-                      fig.width = 8.5, 
                       fig.process = function(x) {
                       x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
                       if (file.rename(x, x2)) x2 else x
