@@ -12,5 +12,5 @@ _cache
 *.ttt
 *_files
 
-qarticle3/one-author.*
-qarticle3/two-author.*
+*one-author*
+*two-author*
