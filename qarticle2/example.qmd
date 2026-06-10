@@ -5,7 +5,7 @@ format:
     qarticle2-pdf:
       keep-tex: FALSE
 biblio-style: apsr
-anonymous: FALSE
+anonymous: TRUE
 thanks: "Replication files are available on the author's Github account (http://github.com/svmiller/svm-r-markdown-templates). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.v.miller@gmail.com."
 title-subtitle: FALSE
 author:
@@ -27,13 +27,13 @@ date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=2.5cm
 mainfont: cochineal
 sansfont: Libertinus Sans
-removetitleabstract: FALSE
+removetitleabstract: TRUE
 fontsize: 12pt
 # doublespacing: TRUE
 endnotes: FALSE
 endfloat: TRUE
 pandocparas: TRUE
-acmsans: TRUE
+acmsans: FALSE
 paper-info:
   - "*DOI*: 10.4320/ICU8.1.2"
   - "*JEL Codes*: A1, B2, C3, D4, Battleship Sunk!"

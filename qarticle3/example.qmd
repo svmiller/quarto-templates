@@ -79,7 +79,7 @@ fontsize: 12pt
 endnotes: FALSE
 pandocparas: TRUE
 alternate-layout: TRUE
-remove-emails: TRUE
+remove-emails: FALSE
 remove-paper-info: FALSE
 appendixletter: "A"
 
