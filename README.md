@@ -39,6 +39,7 @@ particular template.
 | `paper-info:` | Optional stuff to include for your paper (e.g. funding information? DOI? JEL codes?). See YAML of example document for how to use. |
 | `endnotes:`   | Defaults to FALSE. If TRUE, footnotes become endnotes. I hate it too, but some journals want that for peer review. |
 | `pandocparas:` | Defaults to FALSE. If TRUE, default paragraph style by Pandoc is used (i.e. no paragraph indents, spaces between paragraphs). If FALSE, default LaTeX paragraphs are used (i.e. no indent on first paragraph in a section, small indent on ensuing paragraphs) |
+| `endfloat:` | Defaults to FALSE. If TRUE, figure and table replacement moved to back with "[Figure/Table N] about here" placeholder text in the document using the LaTeX `endfloat` package. Observed *only* when `anonymous: TRUE`. |
 
 [^recommend]: If you use this, I recommend you keep `fontsize:` at 11 and specify "Libertinus Sans" or "Linux Biolinum O" in the `sansfont:` argument.
 
