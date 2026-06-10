@@ -3,9 +3,9 @@ title: "Olfactory Commodification and the 'By Mennen' Jingle as Miniature Kultur
 subtitle: "If You Heard the Jingle in Your Head, You're Old and Really Should Monitor Your Calcium Intake"
 format:
     qarticle2-pdf:
-      keep-tex: TRUE
+      keep-tex: FALSE
 biblio-style: apsr
-anonymous: FALSE
+anonymous: TRUE
 thanks: "Replication files are available on the author's Github account (http://github.com/svmiller/svm-r-markdown-templates). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.v.miller@gmail.com."
 title-subtitle: FALSE
 author:
@@ -31,6 +31,7 @@ removetitleabstract: FALSE
 fontsize: 12pt
 # doublespacing: TRUE
 endnotes: FALSE
+endfloat: TRUE
 pandocparas: TRUE
 acmsans: TRUE
 paper-info:
@@ -41,6 +42,29 @@ paper-info:
 ```{r setup, include=FALSE}
 is_docx <- knitr::pandoc_to("docx")
 is_latex <- knitr::pandoc_to("latex")
+
+knitr::opts_chunk$set(echo = FALSE,
+                      message=FALSE, warning=FALSE,
+                      fig.path='_figs/',
+                      cache.path = '_cache/',
+                      fig.width = 8.5, 
+                      fig.process = function(x) {
+                      x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
+                      if (file.rename(x, x2)) x2 else x
+                      })
+
+#library(kableExtra)
+library(tinytable)
+library(stevedata)
+library(tidyverse)
+# Uncomment below if you want code captions
+# oldSource <- knitr::knit_hooks$get("source")
+# knitr::knit_hooks$set(source = function(x, options) {
+#   x <- oldSource(x, options)
+#   x <- ifelse(!is.null(options$code.cap), paste0(x, "\\captionof{chunk}{", options$code.cap,"}"), x)
+#   ifelse(!is.null(options$ref), paste0(x, "\\label{", options$ref,"}"), x)
+# })
+# Add `chunkcaption: TRUE` to YAML as well.
 
 ```
 
@@ -73,7 +97,33 @@ Here is a footnote you can make an endnote if you'd like.[^fn]
 
 # Analysis
 
+```{r}
+#| fig-cap: A Plot of mtcars
+#| label: fig-mtcars
+plot(mtcars)
+```
+
 {{< lipsum 13-17 >}}
+
+```{r, echo= F}
+#| tbl-cap: Mitchell's (1968) Data Set
+#| label: tbl-mitchell68
+#| 
+# Mitchell68 %>% select(-id) %>%
+#   kbl(., col.names = c("Province", "Govt. Control",
+#                        "Owner-Operated Land", "CV Land-Holdings",
+#                        "Vietnamese Land", "French Land", "Mobility",
+#                        "Pop. Density"),
+#       align = c("lccccccc"),
+#       linesep = "",
+#       booktabs = TRUE, longtable = TRUE) %>%
+#   row_spec(0, bold = TRUE) %>%
+#   kable_styling(font_size = 7)
+
+tt(Mitchell68)
+
+```
+
 
 # Conclusion
 
