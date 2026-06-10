@@ -9,8 +9,9 @@ value for co-authored projects, though.
 
 Quarto is popular among researchers in part because it's not limited to the R
 programming language, like R Markdown is. Be advised the basic formatting of
-my templates do not lean on the use of the R programming language, though my 
-templates often come with R examples in the document.
+my templates does not lean on the use of the R programming language, though my 
+templates often come with R examples in the document. You can scrub the R code
+and use the programming language of your choice.
 
 You can see some example documents in [the `examples` directory in this Github repository](https://github.com/svmiller/quarto-templates/tree/main/examples).
 
