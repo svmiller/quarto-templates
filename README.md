@@ -12,6 +12,8 @@ programming language, like R Markdown is. Be advised the basic formatting of
 my templates do not lean on the use of the R programming language, though my 
 templates often come with R examples in the document.
 
+You can see some example documents in [the `examples` directory in this Github repository](https://github.com/svmiller/quarto-templates/tree/main/examples).
+
 # What's Included
 
 | **Template** | **Directory** | **Installation** | 
