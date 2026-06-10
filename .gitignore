@@ -11,3 +11,6 @@ _cache
 *.fff
 *.ttt
 *_files
+
+qarticle3/one-author.*
+qarticle3/two-author.*
