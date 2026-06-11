@@ -1,0 +1,7 @@
+title: Stockholm University EKOHIST Thesis Template (Quarto)
+
+contributes:
+  formats:
+    pdf:
+      template: template.tex
+      block-headings: FALSE

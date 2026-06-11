@@ -1,0 +1,91 @@
+---
+title: "Olfactory Commodification and the 'By Mennen' Jingle as Miniature Kulturindustrie"
+subtitle: "If You Heard the Jingle in Your Head, You're Old and Really Should Monitor Your Calcium Intake"
+format: 
+    qekohist-thesis-pdf:
+      keep-tex: FALSE
+biblio-style: apsr
+thanks: "Replication files are available on the author's Github account (http://github.com/sven-svensson). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.miller@ekohist.su.se."
+author: Sven Svensson
+supervisor: Erika Erikasdottir
+term: Spring Term 2023
+field: International Relations
+abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero justo. Pellentesque eget nibh ex. Aliquam tincidunt egestas lectus id ullamcorper. Proin tellus orci, posuere sed cursus at, bibendum ac odio. Nam consequat non ante eget aliquam. Nulla facilisis tincidunt elit. Nunc hendrerit pellentesque quam, eu imperdiet ipsum porttitor ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Duis vitae nibh mauris. Duis nec sem sit amet ante dictum mattis. Suspendisse diam velit, maximus eget commodo at, faucibus et nisi. Ut a pellentesque eros, sit amet suscipit eros. Nunc tincidunt quis risus suscipit vestibulum. Quisque eu fringilla massa."
+keywords: "pandoc, r markdown, knitr"
+geometry: margin=1in
+mainfont: Times New Roman
+fontsize: 12pt
+doublespacing: TRUE
+pandocparas: FALSE
+toc: TRUE
+lof: TRUE
+lot: TRUE
+header-includes:
+  - \usepackage{longtable}
+  - \LTcapwidth=.95\textwidth
+  - \linespread{1.05}
+  - \usepackage{hyperref}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Uncomment below if you want code captions
+# oldSource <- knitr::knit_hooks$get("source")
+# knitr::knit_hooks$set(source = function(x, options) {
+#   x <- oldSource(x, options)
+#   x <- ifelse(!is.null(options$code.cap), paste0(x, "\\captionof{chunk}{", options$code.cap,"}"), x)
+#   ifelse(!is.null(options$ref), paste0(x, "\\label{", options$ref,"}"), x)
+# })
+# Add `chunkcaption: TRUE` to YAML as well.
+```
+
+
+\newpage
+
+# Introduction
+
+{{< lipsum 1 >}}
+
+## A Subsection in the Introduction
+
+{{< lipsum 2 >}}
+
+```{r cars}
+knitr::kable(summary(cars), caption = "A Summary Table of the `cars` Data Set")
+```
+
+# Results
+
+{{< lipsum 3 >}}
+
+## Including Plots
+
+{{< lipsum 4 >}}
+
+```{r pressure, echo=FALSE, fig.cap = "A Plot of the Vapor Pressure of Mercury"}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+# Appendix {-}
+
+\beginappendix
+
+Optional appendix stuff goes here.
+
+
+\kant[25]
+
+```{r, fig.cap = "A Plot of the Motor Trend Car Road Tests Data"}
+plot(mtcars)
+```
+
+
+\kant[3-4]
+
+```{r}
+knitr::kable(WorldPhones, caption = "The World's Telephones, by Region")
+```
