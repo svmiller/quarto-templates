@@ -84,7 +84,7 @@ They should not be [rebooting *Murder, She Wrote*](https://www.theguardian.com/f
 
 \beginappendix
 
-Optional appendix stuff goes here. Notice how the behavior of tables/figures change for stuff included as an appendix. In our case, the only real "robustness" figures/tables we include are @fig-mtcars and @tbl-worldphones.
+Optional appendix stuff goes here. Notice how the behavior of tables/figures changes for stuff included as an appendix. In our case, the only real "robustness" figures/tables we include are @fig-mtcars and @tbl-worldphones.
 
 
 {{< lipsum 7-8 >}}
