@@ -1,4 +1,4 @@
-% EKOHIST_THESIS ----
+% EKOHIST_THESIS (QUARTO) ----
 % This is just here so I know exactly what I'm looking at in Rstudio when messing with stuff.
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode$for(hyperrefoptions)$,$hyperrefoptions$$endfor$}{hyperref}
@@ -611,7 +611,11 @@ $endif$
 
 \preto\longtable{\par\singlespacing}
 
+\AtBeginDocument{%
+  \renewcommand{\contentsname}{Table of Contents}
+}
 
+% DOCUMENT BEGINS NOW...
 \begin{document}
 
 % \textsf{\textbf{This is sans-serif bold text.}}

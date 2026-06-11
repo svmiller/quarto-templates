@@ -3,15 +3,16 @@ title: "Olfactory Commodification and the 'By Mennen' Jingle as Miniature Kultur
 subtitle: "If You Heard the Jingle in Your Head, You're Old and Really Should Monitor Your Calcium Intake"
 format: 
     qekohist-thesis-pdf:
-      keep-tex: FALSE
+      cite-method: natbib
+      keep-tex: TRUE
 biblio-style: apsr
-thanks: "Replication files are available on the author's Github account (http://github.com/sven-svensson). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.miller@ekohist.su.se."
+bibliography: inst/refs.bib
 author: Sven Svensson
 supervisor: Erika Erikasdottir
-term: Spring Term 2023
+term: Spring Term 2026
 field: International Relations
 abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero justo. Pellentesque eget nibh ex. Aliquam tincidunt egestas lectus id ullamcorper. Proin tellus orci, posuere sed cursus at, bibendum ac odio. Nam consequat non ante eget aliquam. Nulla facilisis tincidunt elit. Nunc hendrerit pellentesque quam, eu imperdiet ipsum porttitor ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Duis vitae nibh mauris. Duis nec sem sit amet ante dictum mattis. Suspendisse diam velit, maximus eget commodo at, faucibus et nisi. Ut a pellentesque eros, sit amet suscipit eros. Nunc tincidunt quis risus suscipit vestibulum. Quisque eu fringilla massa."
-keywords: "pandoc, r markdown, knitr"
+keywords: "pandoc, quarto, By Mennen, Speed Stick"
 geometry: margin=1in
 mainfont: Times New Roman
 fontsize: 12pt
@@ -28,16 +29,7 @@ header-includes:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-
-# Uncomment below if you want code captions
-# oldSource <- knitr::knit_hooks$get("source")
-# knitr::knit_hooks$set(source = function(x, options) {
-#   x <- oldSource(x, options)
-#   x <- ifelse(!is.null(options$code.cap), paste0(x, "\\captionof{chunk}{", options$code.cap,"}"), x)
-#   ifelse(!is.null(options$ref), paste0(x, "\\label{", options$ref,"}"), x)
-# })
-# Add `chunkcaption: TRUE` to YAML as well.
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
@@ -47,45 +39,71 @@ knitr::opts_chunk$set(echo = TRUE)
 
 {{< lipsum 1 >}}
 
+This guide also includes a sample `.bib` file of some of my publications because I want to show you how to cite things. You can do this automatically with `BibTeX` underneath the hood. Watch this, and figure out how to make this work for your case by observing the arguments in the YAML and investing in a citation management software. I strongly recommend `JabRef`, no matter how quaint its GUI is.[^jabref] I've published a few things in the past, a lot with my adviser. These include @millergibler2011dtnc, @gibleretal2012iia, @giblermiller2012cfap, @giblermiller2013qv, @giblermiller2014etts, and  @gibleretal2016amid (among others). Cite my solo stuff too. These citations include @miller2013tdpi, @miller2017ieea, @miller2017etst, and @miller2018etttc. These are just a few to get started.[^more]
+
+[^jabref]: I've used `JabRef` for almost 20 years and it gets the job done. Those that are aware of citation management software often invest in Zotero. I'm sure it's fine, but export whatever you have in Zotero to a `.bib` file. That's what you need for this to work. Hey, would you look at that. Notice how you can generate a footnote!
+
+[^more]: I have more things of mine you can cite.
+
 ## A Subsection in the Introduction
 
-{{< lipsum 2 >}}
+{{< lipsum 2-3 >}}
 
-```{r cars}
-knitr::kable(summary(cars), caption = "A Summary Table of the `cars` Data Set")
+Students, notice how you can reference this specific table with @tbl-cars in the Quarto document. I would strongly advise the use of some other table-rendering package for Quarto/R Markdown, like `{tinytable}` or `{kableExtra}`.[^user] This, however, does the job and doesn't require additional package dependencies.
+
+[^user]: I am assuming my students are using the R programming language because that is the programming language I teach them. 
+
+```{r}
+#| tbl-cap: A Summary Table of the `cars` Data Set in Base R
+#| label: tbl-cars
+knitr::kable(summary(cars))
 ```
 
 # Results
 
-{{< lipsum 3 >}}
+{{< lipsum 4-5 >}}
 
 ## Including Plots
 
-{{< lipsum 4 >}}
+{{< lipsum 5-6 >}}
 
-```{r pressure, echo=FALSE, fig.cap = "A Plot of the Vapor Pressure of Mercury"}
+Students, notice how you can reference this specific plot below with @fig-pressure.
+
+```{r}
+#| fig-cap: A Plot of the `pressure` Data in Base R
+#| label: fig-pressure
 plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-
+\newpage
 # Appendix {-}
 
 \beginappendix
 
-Optional appendix stuff goes here.
+Optional appendix stuff goes here. Notice how the behavior of tables/figures change for stuff included as an appendix. In our case, the only real "robustness" figures/tables we include are @fig-mtcars and @tbl-worldphones.
 
 
-\kant[25]
+{{< lipsum 7-8 >}}
 
-```{r, fig.cap = "A Plot of the Motor Trend Car Road Tests Data"}
+
+```{r}
+#| fig-cap: A Plot of the `mtcars` Data in Base R
+#| label: fig-mtcars
 plot(mtcars)
 ```
 
 
-\kant[3-4]
+{{< lipsum 9-10 >}}
 
 ```{r}
-knitr::kable(WorldPhones, caption = "The World's Telephones, by Region")
+#| tbl-cap: The World's Telephones, by Region
+#| label: tbl-worldphones
+#| 
+knitr::kable(WorldPhones, booktabs = TRUE)
 ```
+
+
+{{< lipsum 11-14 >}}
+
+\newpage
+\singlespacing
