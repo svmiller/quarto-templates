@@ -45,7 +45,7 @@ This guide also includes a sample `.bib` file of some of my publications because
 
 [^more]: I have more things of mine you can cite.
 
-## A Subsection in the Introduction
+# Second Section of Your Paper
 
 {{< lipsum 2-3 >}}
 
@@ -63,7 +63,7 @@ knitr::kable(summary(cars))
 
 {{< lipsum 4-5 >}}
 
-## Including Plots
+## A SubSecction of Your Paper
 
 {{< lipsum 5-6 >}}
 
@@ -74,6 +74,10 @@ Students, notice how you can reference this specific plot below with @fig-pressu
 #| label: fig-pressure
 plot(pressure)
 ```
+
+# Conclusion
+
+They should not be [rebooting *Murder, She Wrote*](https://www.theguardian.com/film/2026/mar/25/jamie-lee-curtis-murder-she-wrote-reboot). That show was wonderful; truly one of mankind's greatest artistic achievements. However, some things are just a moment in time that you can't get back and trying to get them back is just lazily reheating intellectual property for dinner. This is *Murder, She Wrote*, not baked ziti. The idea that 1) a book writer can 2) live in apparently the murder (per capita) capital of the world (in Maine!), 3) moonlight as a detective, 4) actively interfere with police investigations, and 5) somehow coerce confessions *every single time* from people who do not know how to keep their damn mouth shut is just something that does not age well today. Viewers expect forensic evidence that was almost never acknowledged on that show. Plus, Jamie Lee Curtis is probably okay but she's no Angela Lansbury. There is no actor befitting William Windom's role of Dr. Seth Hazlitt. Just, please, don't. Do something else.
 
 \newpage
 # Appendix {-}
