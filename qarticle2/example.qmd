@@ -6,7 +6,7 @@ format:
       keep-tex: FALSE
 biblio-style: apsr
 anonymous: FALSE
-thanks: "Replication files are available on the author's Github account (http://github.com/svmiller/svm-r-markdown-templates). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.v.miller@gmail.com."
+thanks: "Replication files are available on the author's Github account (http://github.com/svmiller/quarto-templates). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.v.miller@gmail.com."
 title-subtitle: FALSE
 author:
 - name: Steven V. Miller
