@@ -1,11 +1,11 @@
 ---
-title: "Olfactory Commodification and the 'By Mennen' Jingle as Miniature Kulturindustrie"
-subtitle: "If You Heard the Jingle in Your Head, You're Old and Really Should Monitor Your Calcium Intake"
+title: "They Should Not Be Rebooting *Murder, She Wrote*"
+#subtitle: ""
 format:
     qarticle2-pdf:
       keep-tex: FALSE
 biblio-style: apsr
-anonymous: TRUE
+anonymous: FALSE
 thanks: "Replication files are available on the author's Github account (http://github.com/svmiller/svm-r-markdown-templates). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.v.miller@gmail.com."
 title-subtitle: FALSE
 author:
@@ -21,13 +21,14 @@ affiliations:
     name: Stockholm University
     department: Institutionen för ekonomisk historia och internationella relationer
     address: Universitetsvägen 10A, 114 18 Stockholm, Sweden
-abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero justo. Pellentesque eget nibh ex. Aliquam tincidunt egestas lectus id ullamcorper. Proin tellus orci, posuere sed cursus at, bibendum ac odio. Nam consequat non ante eget aliquam. Nulla facilisis tincidunt elit. Nunc hendrerit pellentesque quam, eu imperdiet ipsum porttitor ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Duis vitae nibh mauris. Duis nec sem sit amet ante dictum mattis. Suspendisse diam velit, maximus eget commodo at, faucibus et nisi. Ut a pellentesque eros, sit amet suscipit eros. Nunc tincidunt quis risus suscipit vestibulum. Quisque eu fringilla massa."
-keywords: "pandoc, quarto, By Mennen, Speed Stick"
+abstract: "
+They should not be [rebooting *Murder, She Wrote*](https://www.theguardian.com/film/2026/mar/25/jamie-lee-curtis-murder-she-wrote-reboot). That show was wonderful; truly one of mankind's greatest artistic achievements. However, some things are just a moment in time that you can't get back and trying to get them back is just lazily reheating intellectual property for dinner. This is *Murder, She Wrote*, not baked ziti. The idea that 1) a book writer can 2) live in apparently the murder (per capita) capital of the world, 3) moonlight as a detective, 4) actively interfere with police investigations, and 5) somehow coerce confessions *every single time* from people who do not know how to keep their damn mouth shut is just something that does not age well today. Viewers expect forensic evidence that was almost never acknowledged on that show. Plus, Jamie Lee Curtis is probably okay but she's no Angela Lansbury. There is no actor befitting William Windom's role of Dr. Seth Hazlitt. Just, please, don't. Do something else."
+keywords: "pandoc, quarto, Angela Lansbury, Hollywood has run out of ideas, memberberries, William Windom is a woefully underappreciated character actor"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=2.5cm
 mainfont: cochineal
 sansfont: Libertinus Sans
-removetitleabstract: TRUE
+removetitleabstract: FALSE
 fontsize: 12pt
 # doublespacing: TRUE
 endnotes: FALSE
