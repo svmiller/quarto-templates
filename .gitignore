@@ -12,6 +12,8 @@ _cache
 *.ttt
 *_files
 *.log
+*.aux
+*.out
 
 example.pdf
 example.tex
