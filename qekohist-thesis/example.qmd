@@ -1,6 +1,6 @@
 ---
-title: "Olfactory Commodification and the 'By Mennen' Jingle as Miniature Kulturindustrie"
-subtitle: "If You Heard the Jingle in Your Head, You're Old and Really Should Monitor Your Calcium Intake"
+title: "A Title for Your Thesis"
+subtitle: "A Subtitle for Your Document, Which Most of You Typically Include. It's Optional, Though..."
 format: 
     qekohist-thesis-pdf:
       cite-method: natbib
@@ -12,7 +12,7 @@ supervisor: Erika Erikasdottir
 term: Spring Term 2026
 field: International Relations
 abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero justo. Pellentesque eget nibh ex. Aliquam tincidunt egestas lectus id ullamcorper. Proin tellus orci, posuere sed cursus at, bibendum ac odio. Nam consequat non ante eget aliquam. Nulla facilisis tincidunt elit. Nunc hendrerit pellentesque quam, eu imperdiet ipsum porttitor ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Duis vitae nibh mauris. Duis nec sem sit amet ante dictum mattis. Suspendisse diam velit, maximus eget commodo at, faucibus et nisi. Ut a pellentesque eros, sit amet suscipit eros. Nunc tincidunt quis risus suscipit vestibulum. Quisque eu fringilla massa."
-keywords: "pandoc, quarto, By Mennen, Speed Stick"
+keywords: "pandoc, quarto"
 geometry: margin=1in
 mainfont: Times New Roman
 fontsize: 12pt
