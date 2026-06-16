@@ -11,6 +11,10 @@ _cache
 *.fff
 *.ttt
 *_files
+*.log
 
 example.pdf
 example.tex
+
+one-author.qmd
+two-author.qmd
