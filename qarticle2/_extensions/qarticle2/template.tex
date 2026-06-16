@@ -595,6 +595,20 @@ $endif$ % end appendixletter-if
 $endif$ % end endfloat-if
 $endif$ % end anonymous-if
 
+% This is for cases where the document has a minimal appendix included at the
+% end. I would discourage users from doing too much with appendices in this
+% case. However, it works fine if the appendix is just supposed to be a simple
+% table or two. In cases where the appendix is much longer, it makes sense to
+% make it a separate document.
+
+\newcommand{\beginappendix}{
+  \renewcommand{\thesection}{A}
+  \setcounter{table}{0}
+  \renewcommand{\thetable}{A.\arabic{table}}
+  \setcounter{figure}{0}
+  \renewcommand{\thefigure}{A.\arabic{figure}}
+}
+
 
 % DOCUMENT BEGINS NOW...
 \begin{document} 

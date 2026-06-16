@@ -616,6 +616,14 @@ $endif$ % end endfloat-if
 $endif$ % end anonymous-if
 
 
+\newcommand{\beginappendix}{
+  \renewcommand{\thesection}{A}
+  \setcounter{table}{0}
+  \renewcommand{\thetable}{A.\arabic{table}}
+  \setcounter{figure}{0}
+  \renewcommand{\thefigure}{A.\arabic{figure}}
+}
+
 % DOCUMENT BEGINS NOW...
 \begin{document}
 

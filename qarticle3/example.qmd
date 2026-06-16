@@ -70,8 +70,8 @@ biblio-style: apsr
 #csl: chicago-notes-bibliography-16th-edition.csl
 # citeproc: TRUE
 mainfont: cochineal
-anonymous: FALSE
-endfloat: TRUE
+anonymous: TRUE
+endfloat: FALSE
 sansitup: FALSE
 # sansfont: Libertinus Sans
 fontsize: 12pt
@@ -174,3 +174,38 @@ tt(Mitchell68)
 
 # References
 
+::: {#refs}
+:::
+
+\newpage
+
+# Appendix {.appendix}
+
+\beginappendix
+
+The following works for PDF output, though is a bit "hacky" (sic). Cross-referencing works, as you should see in the case of @fig-fakeTSD and @tbl-eightschools. If you elect to use this approach to including an appendix in your document, keep this appendix minimal in size. Anything more complex should be a spin-off document. Note: this approach will *not* play nicely with the `endfloat` LaTeX package. If you're anonymizing your document *and* moving figures/tables to the back of the document to please the journal, you'll want to spin off the appendix to a separate document. The downside of this is you'll lose cross-referencing to the appendix. Oh well. :(
+
+{{< lipsum 20-21 >}}
+
+```{r}
+#| fig-cap: A Plot of fakeTSD in {stevedata}
+#| label: fig-fakeTSD
+plot(fakeTSD$y)
+```
+
+## This and That
+
+{{< lipsum 22-23 >}}
+
+
+
+```{r, echo= F}
+#| tbl-cap: Rubin's (1981) "Eight Schools" Data Set
+#| label: tbl-eightschools
+#| 
+
+tt(eight_schools) %>%
+  setNames(c("School", "Num. Treated", "Num. Control",
+             "Est. Effect", "Std. Error", "Res. Var."))
+
+```
