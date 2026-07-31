@@ -19,6 +19,7 @@ You can see some example documents in [the `examples` directory in this Github r
 
 | **Template** | **Directory** | **Installation** | 
 |:------------:|:-------------:|:-----------------|
+| 2nd Syllabus Template | [`syllabus2`](https://github.com/svmiller/quarto-templates/tree/main/syllabus2) | `quarto use template svmiller/quarto-templates/syllabus2` |
 | 2nd Article/Manuscript Template | [`qarticle2`](https://github.com/svmiller/quarto-templates/tree/main/qarticle2) | `quarto use template svmiller/quarto-templates/qarticle2` |
 | 3rd Article/Manuscript Template | [`qarticle3`](https://github.com/svmiller/quarto-templates/tree/main/qarticle3) | `quarto use template svmiller/quarto-templates/qarticle3` |
 | Stockholm University EKOHIST Thesis Template | [`qekohist-thesis`](https://github.com/svmiller/quarto-templates/tree/main/qekohist-thesis) | `quarto use template svmiller/quarto-templates/qekohist-thesis` |
@@ -92,3 +93,29 @@ does not have figures and/or tables---as odd as that seems for a thesis---you ca
 change `lof` and/or `lot` to be `FALSE`. Both arguments control whether a list
 of figures and a list of tables, respectively, are generated in the document
 after the table of contents.
+
+# Syllabus 2's Important YAML Parameters
+
+This is a fairly straightforward template, but two YAML parameters are unique
+in this template.
+
+## `two-teachers`, and `n-teachers`
+
+Behavior in this template changes contingent on the number of teachers in
+the course. However, this needs to be declared by the user as in an argument in 
+the YAML. If there are two teachers, declare `two-authors: TRUE` in the YAML. If 
+there are more than two teachers, declare `n-teachers: TRUE` in the YAML. The 
+default formatting assumes there is just one teacher.
+
+Some other arguments:
+
+| **Argument** | **Description** |
+|:------------:|:----------------|
+| `title` | Title of the class |
+| `author` | Name(s) of the professor(s) |
+| `term` | The term of the class (e.g. Fall 2024, Spring 2025, Summer 2025) |
+| `dates` | A basic date range for the course (e.g. Feb. 20 - March 21) |
+| `fontawesome` | Logical, defaults to TRUE, for use of Font Awesome icons |
+| `email` | The email for the "course responsible" professor. It's a thing here. |
+| `web` | Class website. Technically optional, but you really should use it. |
+| `office` | Your office location. Technically optional, but you really should use it. |
