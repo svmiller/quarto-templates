@@ -19,9 +19,9 @@ You can see some example documents in [the `examples` directory in this Github r
 
 | **Template** | **Directory** | **Installation** | 
 |:------------:|:-------------:|:-----------------|
-| 2nd Syllabus Template | [`qsyllabus2`](https://github.com/svmiller/quarto-templates/tree/main/qsyllabus2) | `quarto use template svmiller/quarto-templates/qsyllabus2` |
 | 2nd Article/Manuscript Template | [`qarticle2`](https://github.com/svmiller/quarto-templates/tree/main/qarticle2) | `quarto use template svmiller/quarto-templates/qarticle2` |
 | 3rd Article/Manuscript Template | [`qarticle3`](https://github.com/svmiller/quarto-templates/tree/main/qarticle3) | `quarto use template svmiller/quarto-templates/qarticle3` |
+| 2nd Syllabus Template | [`qsyllabus2`](https://github.com/svmiller/quarto-templates/tree/main/qsyllabus2) | `quarto use template svmiller/quarto-templates/qsyllabus2` |
 | Stockholm University EKOHIST Thesis Template | [`qekohist-thesis`](https://github.com/svmiller/quarto-templates/tree/main/qekohist-thesis) | `quarto use template svmiller/quarto-templates/qekohist-thesis` |
 
 You could alternatively do something like `quarto add svmiller/quarto-templates/qarticle3`, 
@@ -83,17 +83,6 @@ Defaults to `FALSE`. If `TRUE`, author emails are scrubbed from the document.
 This is perhaps useful for multi-author documents and/or when a corresponding
 email in the acknowledgement underneath the title is sufficient.
 
-# EKOHIST Thesis's Important YAML Parameters
-
-This is a boutique template of potential use for MA students in the Department
-of Economic History and International Relations, where I currently work. I advise
-students to not change much in the YAML for the `.qmd` file. There is no option
-to anonymize the document. It wouldn't make sense in this context. If the student
-does not have figures and/or tables---as odd as that seems for a thesis---you can
-change `lof` and/or `lot` to be `FALSE`. Both arguments control whether a list
-of figures and a list of tables, respectively, are generated in the document
-after the table of contents.
-
 # Syllabus 2's Important YAML Parameters
 
 This is a fairly straightforward template, but two YAML parameters are unique
@@ -119,3 +108,16 @@ Some other arguments:
 | `email` | The email for the "course responsible" professor. It's a thing here. |
 | `web` | Class website. Technically optional, but you really should use it. |
 | `office` | Your office location. Technically optional, but you really should use it. |
+
+# EKOHIST Thesis's Important YAML Parameters
+
+This is a boutique template of potential use for MA students in the Department
+of Economic History and International Relations, where I currently work. I advise
+students to not change much in the YAML for the `.qmd` file. There is no option
+to anonymize the document. It wouldn't make sense in this context. If the student
+does not have figures and/or tables---as odd as that seems for a thesis---you can
+change `lof` and/or `lot` to be `FALSE`. Both arguments control whether a list
+of figures and a list of tables, respectively, are generated in the document
+after the table of contents.
+
+
