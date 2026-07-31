@@ -19,7 +19,7 @@ You can see some example documents in [the `examples` directory in this Github r
 
 | **Template** | **Directory** | **Installation** | 
 |:------------:|:-------------:|:-----------------|
-| 2nd Syllabus Template | [`syllabus2`](https://github.com/svmiller/quarto-templates/tree/main/syllabus2) | `quarto use template svmiller/quarto-templates/syllabus2` |
+| 2nd Syllabus Template | [`qsyllabus2`](https://github.com/svmiller/quarto-templates/tree/main/qsyllabus2) | `quarto use template svmiller/quarto-templates/qsyllabus2` |
 | 2nd Article/Manuscript Template | [`qarticle2`](https://github.com/svmiller/quarto-templates/tree/main/qarticle2) | `quarto use template svmiller/quarto-templates/qarticle2` |
 | 3rd Article/Manuscript Template | [`qarticle3`](https://github.com/svmiller/quarto-templates/tree/main/qarticle3) | `quarto use template svmiller/quarto-templates/qarticle3` |
 | Stockholm University EKOHIST Thesis Template | [`qekohist-thesis`](https://github.com/svmiller/quarto-templates/tree/main/qekohist-thesis) | `quarto use template svmiller/quarto-templates/qekohist-thesis` |

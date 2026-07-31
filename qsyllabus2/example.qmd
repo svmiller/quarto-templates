@@ -1,6 +1,6 @@
 ---
 format:
-    syllabus2-pdf:
+    qsyllabus2-pdf:
       keep-tex: FALSE
 geometry: margin=2.5cm
 
