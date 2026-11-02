@@ -22,6 +22,7 @@ You can see some example documents in [the `examples` directory in this Github r
 | 2nd Article/Manuscript Template | [`qarticle2`](https://github.com/svmiller/quarto-templates/tree/main/qarticle2) | `quarto use template svmiller/quarto-templates/qarticle2` |
 | 3rd Article/Manuscript Template | [`qarticle3`](https://github.com/svmiller/quarto-templates/tree/main/qarticle3) | `quarto use template svmiller/quarto-templates/qarticle3` |
 | 2nd Syllabus Template | [`qsyllabus2`](https://github.com/svmiller/quarto-templates/tree/main/qsyllabus2) | `quarto use template svmiller/quarto-templates/qsyllabus2` |
+| Beamer Template | [`qbeamer`](https://github.com/svmiller/quarto-templates/tree/main/qbeamer) | `quarto use template svmiller/quarto-templates/qbeamer` |
 | Stockholm University EKOHIST Thesis Template | [`qekohist-thesis`](https://github.com/svmiller/quarto-templates/tree/main/qekohist-thesis) | `quarto use template svmiller/quarto-templates/qekohist-thesis` |
 
 You could alternatively do something like `quarto add svmiller/quarto-templates/qarticle3`, 
@@ -108,6 +109,14 @@ Some other arguments:
 | `email` | The email for the "course responsible" professor. It's a thing here. |
 | `web` | Class website. Technically optional, but you really should use it. |
 | `office` | Your office location. Technically optional, but you really should use it. |
+
+# Beamer Template's Important YAML Parameters
+
+| **Argument** | **Description** |
+|:------------:|:----------------|
+| `titlegraphicshift` | Shifts titlegraphic, if supplied. Requires LaTeX code |
+| `primarycolor` | takes HTML RGB code for primary section/title color. No hashtag. Defaults to SU Blue |
+| `secondarycolor` | takes HTML RGB code for secondary colors. No hashtag. Defaults to SU Water |
 
 # EKOHIST Thesis's Important YAML Parameters
 

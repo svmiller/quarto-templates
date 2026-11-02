@@ -3,22 +3,22 @@ title: "Untitled"
 subtitle: IRIII.2 -- Quantitative Methods in the Study of International Relations
 author: Steven V. Miller
 institute: Department of Economic History and International Relations
-titlegraphic: "/home/steve/Koofr/su/su-logotyp.png"
-titlegraphshift: "\\vspace{6cm}"
+#titlegraphic: "/home/steve/Koofr/su/su-logotyp.png"
+#titlegraphshift: "\\vspace{6cm}"
 titlegraphicoptions:
   - width=0.3\paperwidth
 # mainfont: "Open Sans Light"
-sansfont: "Open Sans"
-sansfontoptions:
-  - UprightFont=Open Sans Light
-  - BoldFont=Open Sans Bold
-titlefont: "Titillium Web"
+# sansfont: "Open Sans"
+# sansfontoptions:
+#   - UprightFont=Open Sans Light
+#   - BoldFont=Open Sans Bold
+#titlefont: "Titillium Web"
 fontsize: 10pt
 #primarycolor: "ba0c2f"
 #secondarycolor: "A7B1B7"
 format:
   qbeamer-beamer:
-    keep-tex: TRUE
+    keep-tex: FALSE
 ---
 
 
