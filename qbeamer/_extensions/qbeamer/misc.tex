@@ -1,0 +1,52 @@
+% Get rid of navigation symbols.
+%-------------------------------
+% \setbeamertemplate{navigation symbols}{}
+
+% Some additional title page adjustments.
+%----------------------------------------
+\setbeamertemplate{title page}[empty]
+%\date{}
+\setbeamerfont{subtitle}{size=\small}
+
+%\setbeamercovered{transparent}
+
+% Some optional colors. Change or add as you see fit.
+%---------------------------------------------------
+\definecolor{clemsonpurple}{HTML}{522D80}
+\definecolor{clemsonorange}{HTML}{F66733}
+\definecolor{uiucblue}{HTML}{003C7D}
+\definecolor{uiucorange}{HTML}{F47F24}
+
+\definecolor{sublue}{HTML}{002F5F}
+\definecolor{susky}{HTML}{ACDEE6}
+\definecolor{suwater}{HTML}{9BB2CE}
+
+
+\let\Tiny=\tiny
+
+
+% Sections and subsections should not get their own damn slide.
+%--------------------------------------------------------------
+\AtBeginPart{}
+\AtBeginSection{}
+\AtBeginSubsection{}
+\AtBeginSubsubsection{}
+
+% Adjust spacing in table of contents, to my discretion.
+% ------------------------------------------------------
+\usepackage{etoolbox}
+
+\makeatletter
+% Adjust spacing between sections.
+\patchcmd{\beamer@sectionintoc}{\vfill}{\vskip1.5em}{}{}
+% Remove spacing before subsection entries.
+\pretocmd{\beamer@subsectionintoc}{\vskip-1em}{}{}
+\makeatother
+
+% Adjust how tables/captions behave w/r/t spacing, to my discretion.
+% ------------------------------------------------------------------
+
+\setlength{\abovecaptionskip}{0pt}
+\setlength{\belowcaptionskip}{-6pt}
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption name}{series=\normalfont}

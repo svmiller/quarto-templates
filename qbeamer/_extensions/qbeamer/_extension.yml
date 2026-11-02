@@ -1,0 +1,21 @@
+title: Steve's Beamer Template (Quarto)
+
+author: Steven V. Miller
+version: 1.0.0
+quarto-required: ">=1.7.0"
+
+contributes:
+  formats:
+    beamer:
+      theme: metropolis
+      aspectratio: 149
+      slide-level: 3
+      # themeoptions:
+      #   - progressbar=frametitle
+      #   - numbering=fraction
+      include-in-header:
+        - misc.tex
+      template-partials:
+        - before-title.tex
+        - title.tex
+        - after-body.tex

@@ -1,17 +1,16 @@
 ---
 format:
-    qsyllabus2-pdf:
+    syllabus2-pdf:
       keep-tex: FALSE
 geometry: margin=2.5cm
 
 title: "IRII.2: A Class on This, That, and the Other"
 author:
 - name: Steven V. Miller
-#- name: A Second Person
-#- name: A Graduate Teaching Assistant
+- name: Forename diMcPatronymixsonovez
+#- name: A Graduate Student
 
-#two-teachers: TRUE
-#n-teachers: TRUE
+two-teachers: TRUE
 fontawesome: TRUE
 
 term: "Spring 2025"
